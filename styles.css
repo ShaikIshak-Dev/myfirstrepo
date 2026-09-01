@@ -1,0 +1,98 @@
+/* ==========================================================================
+   1. CSS RESET & GLOBAL STYLES
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Includes padding in element width */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+
+    background-color: #f4f6f9;
+}
+
+/* ==========================================================================
+   2. TYPOGRAPHY
+   ========================================================================== */
+h1, h2, h3 {
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+p { margin-bottom: 1.2rem; }
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #004499;
+}
+
+/* ==========================================================================
+   3. LAYOUT & STRUCTURE
+   ========================================================================== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.main-content {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* ==========================================================================
+   4. COMPONENTS (Cards & Buttons)
+   ========================================================================== */
+.card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.btn {
+    display: inline-block;
+    background-color: #0066cc;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #0052a3; /* Darker blue on hover */
+}
+
+/* ==========================================================================
+   5. RESPONSIVE DESIGN (Media Queries)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column; /* Stack columns vertically on small screens */
+    }
+    
+    h1 { font-size: 2rem; }
+}
+
